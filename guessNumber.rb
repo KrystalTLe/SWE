@@ -1,5 +1,5 @@
 #This program generates a random number. User enters their guess.
-#The program will keep asking for input user guesses the right number or the 
+#The program will keep asking for input until user guesses the right number or the 
 #max tries(3) is reached; whatever comes first
 #Krystal Le
 #Spring 2017. Software Engineering.
