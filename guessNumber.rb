@@ -4,6 +4,7 @@
 #Krystal Le
 #Spring 2017. Software Engineering.
 random_number = rand(11)
+#Num of tres
 num_try=2
 print "Enter a number between 0 and 10: "
 while user_input=gets.to_i and num_try>0
@@ -16,6 +17,8 @@ while user_input=gets.to_i and num_try>0
         print "Enter a smaller number: "
 
     end
+    #Decrement try every time user inputs
     num_try-=1
 end
+#End program output when user reaches max tries
 puts "Maximum tries reached. The number is: #{num_try}"
