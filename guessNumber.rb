@@ -6,10 +6,8 @@
 
 #Generate random number between 0 and 10
 random_number = rand(11)
-
 #Num of tries
 num_try=2
-
 print "Enter a number between 0 and 10: "
 while user_input=gets.to_i and num_try>0
     if user_input == random_number
