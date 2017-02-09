@@ -1,5 +1,6 @@
 #1. 
 def Calculations()
+    puts "=======================PROGRAM 1======================"
     puts "Enter the first number: "
     first = gets.chomp.to_i
     puts "Enter the second number: "
@@ -12,19 +13,22 @@ def Calculations()
     puts "The difference: #{difference}"
     puts "The product: #{product}"
 end
+Calculations()
 
 #2. 
 def Age()
+    puts "=======================PROGRAM 2======================"
     puts "Enter your age: "
     age=gets.chomp.to_i
     for i in 0...age
         puts "Are we there yet?"
     end
 end
-
+Age()
 
 #3. 
 def NaughtyOrNice()
+    puts "=======================PROGRAM 3======================"
     namelist={'bryon'=>'naughty','laura'=>'nice','joe'=>'naughty','nick'=>'nice'}
     puts "Name hash: #{namelist}"
     
@@ -39,9 +43,11 @@ def NaughtyOrNice()
     searchName=gets.chomp.downcase
     puts "#{searchName.capitalize} is #{namelist[searchName]}"
 end
+NaughtyOrNice()
 
 #4.
 def BergersGradingMethod()
+    puts "=======================PROGRAM 4======================"
     result=true
     for i in 0..2
         num=Random.rand(2)
@@ -55,10 +61,10 @@ def BergersGradingMethod()
     end
 end
 
+BergersGradingMethod()
 
 
-
-class Name
+class Student
     attr_accessor :firstname
     attr_accessor :lastname
     def initialize(firstname, lastname)
@@ -69,16 +75,12 @@ class Name
         puts "Full Name is: #{@firstname.capitalize},#{@lastname.capitalize}"
     end
 end       
-
-
-# Calculations()
-# Age()
-
-# NaughtyOrNice()
-
-# BergersGradingMethod()
-
-# krystal=Name.new('krystal','le')
-# krystal.firstname='bryon'
-# puts krystal.lastname
-# puts krystal.to_s()
+puts "=======================PROGRAM 5======================"
+student=Student.new('krystal','lee')
+puts student.to_s
+puts "Change first name"
+student.firstname='bryon'
+puts student.to_s()
+puts "Change last name"
+student.lastname='nush'
+puts student.to_s()
