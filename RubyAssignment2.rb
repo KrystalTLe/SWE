@@ -1,3 +1,6 @@
+#Name: Krystal
+#Software Engineering, Spring 2017.
+#Ruby Assignment
 #1. 
 def Calculations()
     puts "=======================PROGRAM 1======================"
